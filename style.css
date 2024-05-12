@@ -1,0 +1,114 @@
+:root
+{
+  --bg-color-0: #000;
+  --bg-color-3: #ddd;
+  --bg-color-7: #f1f1f1;
+  --text-color-9: #fff;
+}
+
+body {margin: 0; font-family: Arial, Helvetica, sans-serif;}
+
+/* navbar starts */
+#main-container #navbar
+{
+  top: 0;
+  z-index: 99;
+  width: 100%;
+  position: fixed;
+  transition: 0.4s;
+  overflow: hidden;
+  padding: 90px 10px;
+  background-color: var(--bg-color-7);
+  box-shadow: 3px 3px 6px #dadada;
+}
+
+#main-container #navbar a
+{
+  float: left;
+  padding: 12px;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  border-radius: 4px;
+  text-decoration: none;
+  color: var(--bg-color-0);
+}
+
+#main-container #navbar #logo
+{
+  font-size: 35px;
+  transition: 0.4s;
+  font-weight: bold;
+}
+
+#main-container #navbar .nav-right
+{
+  float: right;
+  margin-right: 50px;
+}
+
+#main-container #navbar .nav-right a:hover
+{
+  background-color: var(--bg-color-3);
+  scale: 1.03;
+}
+
+#main-container #navbar .nav-right a.active
+{
+  background-color: dodgerblue;
+  color: var(--text-color-9);
+}
+
+#main-container #navbar .nav-right .subnav
+{
+  overflow: hidden;
+}
+
+#main-container #navbar .nav-right .subnav .subnavbtn
+{
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  /* color: white; */
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+#main-container #navbar .nav-right .subnav .subnav-content
+{
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: red;
+  width: 100%;
+  z-index: 1;
+}
+
+#main-container #navbar .nav-right .subnav .subnav-content a:hover
+{
+  background-color: #eee;
+  color: var(--bg-color-0);
+}
+
+#main-container #navbar .nav-right .subnav:hover
+{
+  background-color: red;
+}
+
+#main-container #navbar .nav-right .subnav:hover .subnav-content
+{
+  display: block;
+}
+
+
+@media (max-width: 767px) {
+  #main-container {
+    max-width: 100%;
+  }
+
+  #main-container #navbar .nav-right {
+    display: none;
+  }
+}
