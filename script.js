@@ -5,26 +5,25 @@ window.onscroll = function () {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.getElementById("navbar").style.padding = "30px 10px";
-    document.getElementById("logo").style.fontSize = "25px"
+    document.getElementById("webnav_wrapper").style.padding = "10px 10px";
+
+    document.getElementById("weblogoimg_wrapper").style.height = "50px";
+    document.getElementById("weblogoimg_wrapper").style.width = "50px";
+
+    document.getElementById("webnameh3_wrapper").style.fontSize = "17px";
+
+    document.getElementById("weblogo_wrapper").style.width = "5%";
+    document.getElementById("webname_wrapper").style.width = "35%";
   }
   else{
-    document.getElementById("navbar").style.padding = "80px 10px";
-    document.getElementById("logo").style.fontSize = "35px";
+    document.getElementById("webnav_wrapper").style.padding = "80px 70px";
+
+    document.getElementById("weblogoimg_wrapper").style.height = "100px";
+    document.getElementById("weblogoimg_wrapper").style.width = "100px";
+
+    document.getElementById("webnameh3_wrapper").style.fontSize = "30px";
+
+    document.getElementById("weblogo_wrapper").style.width = "10%";
+    document.getElementById("webname_wrapper").style.width = "30%";
   }
-}
-
-document.getElementById('home').style.backgroundColor = 'dodgerblue';
-
-let myList = [];
-
-function activeNavlink(id) {
-  myList.push(document.getElementById(id).innerText);
-
-  console.log(myList);
-
-  let addColor = document.getElementById(id).style.backgroundColor = 'dodgerblue';
-  console.log(addColor);
-
-  if(true) {}
 }
