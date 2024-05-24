@@ -3,6 +3,7 @@ body {
     padding: 0;
 }
 
-h1 {
+.webhome_wrapper {
     margin-top: 300px;
 }
+
